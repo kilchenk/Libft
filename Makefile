@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS =	ft_memset.c		\
+SRCS = ft_memset.c		\
 		ft_bzero.c		\
 		ft_memcpy.c		\
 		ft_memmove.c 	\
@@ -34,6 +34,7 @@ SRCS =	ft_memset.c		\
 		ft_calloc.c		\
 		ft_strdup.c		\
 		ft_substr.c		\
+		ft_strjoin.c	\
 		ft_strtrim.c	\
 		ft_split.c		\
 		ft_itoa.c		\
@@ -44,7 +45,7 @@ SRCS =	ft_memset.c		\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
 
-#SRCSB =	$(SRCS)				\
+SRCSB =	$(SRCS)				\
 		ft_lstadd_back.c	\
 		ft_lstadd_front.c	\
 		ft_lstclear.c		\
@@ -61,8 +62,8 @@ OBJS_DIR = objs/
 OBJS = $(SRCS:.c=.o)
 OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
 
-#OBJSB = $(SRCSB:.c=.o)
-#OBJECTS_BONUS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJSB))
+OBJSB = $(SRCSB:.c=.o)
+OBJECTS_BONUS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJSB))
 
 CC = gcc
 
