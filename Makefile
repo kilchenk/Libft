@@ -6,7 +6,7 @@
 #    By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/17 20:43:38 by kilchenk          #+#    #+#              #
-#    Updated: 2022/12/21 18:55:21 by kilchenk         ###   ########.fr        #
+#    Updated: 2023/01/07 16:24:20 by kilchenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,6 @@ SRCS = ft_memset.c		\
 		ft_substr.c		\
 		ft_strjoin.c	\
 		ft_strtrim.c	\
-		ft_split.c		\
 		ft_itoa.c		\
 		ft_strmapi.c	\
 		ft_striteri.c	\
@@ -44,17 +43,18 @@ SRCS = ft_memset.c		\
 		ft_putstr_fd.c	\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
+		ft_split.c		\
 
-SRCSB =	$(SRCS)				\
+SRCSB =	$(SRCS)		 		\
 		ft_lstadd_back.c	\
 		ft_lstadd_front.c	\
 		ft_lstclear.c		\
 		ft_lstdelone.c		\
 		ft_lstiter.c		\
 		ft_lstlast.c		\
-		ft_lstmap.c			\
 		ft_lstnew.c			\
 		ft_lstsize.c		\
+		ft_lstmap.c			\
 
 NAME = libft.a
 

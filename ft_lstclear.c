@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:49:30 by kilchenk          #+#    #+#             */
-/*   Updated: 2023/01/01 22:49:30 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/07 13:18:54 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 
 	if (!lst && !del && !*lst)
 	{
-		return (NULL);
+		return ;
 	}
-
 	while (*lst && del)
 	{
 		i = (*lst)->next;
-		ft_lstdelone(*lst);
+		ft_lstdelone(*lst, del);
 		*lst = i;
 	}
 }

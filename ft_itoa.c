@@ -6,18 +6,18 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 14:45:53 by kilchenk          #+#    #+#             */
-/*   Updated: 2022/12/25 22:22:30 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/07 13:13:48 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	len (long nb)
+int	len(long nb)
 {
 	int	len;
 
 	len = 0;
-	if (nb < 0)
+	if (nb <= 0)
 	{
 		nb = nb * -1;
 		len ++;
@@ -30,13 +30,13 @@ int	len (long nb)
 	return (len);
 }
 
-char	*zero (char *s)
+char	*zero(char *s)
 {
 	s[0] = '0';
 	return (s);
 }
 
-char	*ft_itoa (int n)
+char	*ft_itoa(int n)
 {
 	char	*str;
 	int		i;

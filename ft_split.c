@@ -6,10 +6,11 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 19:14:47 by kilchenk          #+#    #+#             */
-/*   Updated: 2022/12/21 14:41:51 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/07 15:17:11 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// char	**ft_split(char const *s, char c)
-// {
-// }
+char	**ft_split(char const *s, char c)
+{
+
+}

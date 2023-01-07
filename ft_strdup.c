@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 17:28:07 by kilchenk          #+#    #+#             */
-/*   Updated: 2022/12/17 18:50:06 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/07 15:44:43 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	size = ft_strlen(s);
 	str = malloc(size + 1);
+	if (!str)
+	{
+		return (NULL);
+	}
 	while (s[i])
 	{
 		str[i] = s[i];

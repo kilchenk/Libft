@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/30 21:01:31 by kilchenk          #+#    #+#             */
-/*   Updated: 2023/01/07 13:17:53 by kilchenk         ###   ########.fr       */
+/*   Created: 2023/01/07 13:28:56 by kilchenk          #+#    #+#             */
+/*   Updated: 2023/01/07 13:58:22 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*last;
+	t_list	*ret;
+	t_list	*new;
 
-	last = NULL;
-	if (*lst)
+	if (!lst)
+		return (NULL);
+	ret = NULL;
+	while (lst)
 	{
-		last = ft_lstlast(*lst);
-		last->next = new;
+		new = ft_lstnew((*f)(lst->content));
+		if (!new)
+		{
+			del(new);
+		}
+		ft_lstadd_back(&ret, new);
+		lst = lst->next;
 	}
-	else
-		*lst = new;
+	return (ret);
 }

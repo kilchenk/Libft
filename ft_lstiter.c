@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:59:20 by kilchenk          #+#    #+#             */
-/*   Updated: 2023/01/01 22:59:20 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/07 13:19:27 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!f)
 	{
-		return (NULL);
+		return ;
 	}
 	while (lst)
 	{

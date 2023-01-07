@@ -17,13 +17,9 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 
 	i = ft_strlen(s);
-	if (i == 0)
-	{
-		return ((char *)s);
-	}
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (char )c)
 			return ((char *) &s[i]);
 		i--;
 	}
@@ -32,8 +28,8 @@ char	*ft_strrchr(const char *s, int c)
 
 // int    main(void)
 // {
-//     char dst[15] = "HelloWorld!";
-//     char dst2[15] = "HelloWorld!";
+//     char dst[15] = "";
+//     char dst2[15] = "";
 //     int c = 'l';
 //     printf("mine : %s\n", ft_strrchr(dst, c));
 //     printf("%s\n", dst);
