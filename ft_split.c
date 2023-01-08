@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 19:14:47 by kilchenk          #+#    #+#             */
-/*   Updated: 2023/01/07 18:49:48 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/08 18:07:50 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ static int	word_count(char const *s, char c)
 	int		count;
 
 	j = 0;
+	count = 0;
 	while (*s)
 	{
 		if (*s != c && count == 0)
@@ -34,9 +35,22 @@ static int	word_count(char const *s, char c)
 	return (j);
 }
 
-static char	word_lenght(char const *s, char del, int len)
+static char	*word_lenght(char const *s, char del, int *len)
 {
+	char	*res;
+	int		i;
 
+	i = 0;
+	while (s[i + *len] != del)
+	{
+		if (s[i + *len] == '\0')
+			break ;
+		i++;
+	}
+	res = ft_substr(s, *len, i);
+	*len += i + 1;
+	res[i] = '\0';
+	return (res);
 }
 
 char	**ft_split(char const *s, char c)
@@ -57,5 +71,8 @@ char	**ft_split(char const *s, char c)
 		if (s[len] == c)
 			len++;
 		else
+			res[i++] = word_lenght(s, c, &len);
 	}
+	res[i] = 0;
+	return (res);
 }

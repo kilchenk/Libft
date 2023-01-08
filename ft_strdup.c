@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 17:28:07 by kilchenk          #+#    #+#             */
-/*   Updated: 2023/01/07 15:44:43 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/08 18:13:04 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strdup(const char *s)
 
 // int main()
 // {
-//     char source[] = "Geeks\0 389";
+//     char source[] = "Geeks389";
 //     // A copy of source is created dynamically
 //     // and pointer to copy is returned.
 //     char* target = ft_strdup(source);

@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 14:47:15 by kilchenk          #+#    #+#             */
-/*   Updated: 2022/12/17 21:11:09 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/08 17:29:18 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 			return ((char *)s);
 		s++;
 	}
@@ -27,9 +27,9 @@ char	*ft_strchr(const char *s, int c)
 
 // int    main(void)
 // {
-//     char dst[15] = "He lloWorld!";
-//     char dst2[15] = "He lloWorld!";
-//     int c = "";
+//     char dst[15] = ("teste");
+//     char dst2[15] = ("teste");
+//     int c = ('e');
 //     printf("mine : %s\n", ft_strchr(dst, c));
 //     printf("%s\n", dst);
 //     printf("string.h : %s\n", strchr(dst2, c));

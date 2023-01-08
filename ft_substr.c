@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 18:51:58 by kilchenk          #+#    #+#             */
-/*   Updated: 2022/12/19 18:44:29 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/08 17:46:59 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (ft_strlen(s) < start)
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	if ((unsigned long int)ft_strlen(s) < start)
 		len = 0;
 	if (ft_strlen(s + start) < len)
 		len = ft_strlen(s + start);
