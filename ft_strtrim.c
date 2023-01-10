@@ -6,7 +6,7 @@
 /*   By: kilchenk <kilchenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 18:04:34 by kilchenk          #+#    #+#             */
-/*   Updated: 2022/12/18 22:04:07 by kilchenk         ###   ########.fr       */
+/*   Updated: 2023/01/10 13:14:42 by kilchenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 // int main(void){
-// 	printf("%s",ft_strtrim("lorem \n ipsum \t dolor \n sit \t amet", " "));
+// 	printf("%s",ft_strtrim("losrem \n ipsum \t dolor \n sit \t amet", " "));
 
 // }

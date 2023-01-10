@@ -42,7 +42,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 //     printf("mine : %zu\n", ft_strlcat(dst, src, size));
 //     printf("%s\n", dst);
 //     printf("string.h : %zu\n", strlcat(dst2, src, size));
-//     printf("%s\n", dst2);
+//     printf ("%s\n", dst2);
 
 //     return (0);
 // }

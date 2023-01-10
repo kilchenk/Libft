@@ -43,6 +43,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 //     printf("mine : %zu\n", ft_strlcpy(dst, src, size));
 //     printf("%s\n", dst);
 //     printf("string.h : %zu\n", strlcpy(dst2, src, size));
-//     printf("%s\n", dst2);
+//     printf ("%s\n", dst2);
 //     return (0);
 // }

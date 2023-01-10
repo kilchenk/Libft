@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//check if the passed character is an alphabet and digit or not.
+//check if the passed character is an alphabet and digit or not.s
 int	ft_isalnum(int c)
 {
 	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')

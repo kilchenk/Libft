@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// check if the passed character is an a digit (0 through 9) or not.
+// check if the passed character is an a digit s(0 through 9) or not.
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

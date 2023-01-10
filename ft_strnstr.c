@@ -44,5 +44,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 // 	   ptr = ft_strnstr(largestring, smallstring, 7);
 // 	   printf("mine : %s\n", (ptr));
 // 	   ptr2 = strnstr(largestring, smallstring, 7);
-// 	   printf("original : %s\n", (ptr2));
+// 	   printf ("original : %s\n", (ptr2));
 // }

@@ -35,5 +35,5 @@ char	*ft_strrchr(const char *s, int c)
 //     printf("%s\n", dst);
 //     printf("string.h : %s\n", strrchr(dst2, c));
 //     printf("%s\n", dst2);
-//     return (0);
+//     return(0);
 // }
