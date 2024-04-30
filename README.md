@@ -36,3 +36,6 @@ Contributions to the libft repository are welcome! Whether it's bug fixes, addit
 ## Acknowledgments
 
 Special thanks to my pears at 42 Wolfsburg for helping understanding the fondamentals and the path our school prepared for us.
+
+---
+Made by kilchenk: kilchenk@student.42wolfsburg.de | LinkedIn: [kilchenk](https://www.linkedin.com/in/kyrylo-ilchenko/)
